@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جشنواره فرهنگی هنری فردا</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background-color: #fff; color: #333; }
+    header { background-color: #d8e2d1; padding: 20px; text-align: center; }
+    nav { background-color: #333; color: #fff; padding: 10px; text-align: center; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; transition: 0.3s; }
+    nav a:hover { color: #d8e2d1; transform: scale(1.1); }
+    main { margin: 20px; }
+
+    section { margin: 40px 0; padding: 20px; background: #f8f8f8; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+    .celebrities { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px; }
+    .celebrity-card { 
+      width: 300px; height: 400px; margin: 15px; padding: 20px; background-color: #fff; 
+      border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: all 0.3s;
+    }
+    .celebrity-card:hover { transform: scale(1.05) translateY(-10px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+    .celebrity-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+    .celebrity-card h3 { margin-top: 15px; font-size: 20px; }
+    .celebrity-card p { margin-top: 10px; font-size: 14px; height: 100px; overflow-y: auto; }
+
+    footer { background-color: #d8e2d1; text-align: center; padding: 20px; margin-top: 40px; }
+    footer p { color: #333; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>جشنواره فرهنگی هنری فردا</h1>
+    <p>معرفی مشاهیر ایران</p>
+  </header>
+  <nav>
+    <a href="#goal">هدف جشنواره</a>
+    <a href="#celebrity">مشاهیر ایران</a>
+    <a href="#designer">درباره طراح</a>
+  </nav>
+  <main>
+    <section id="goal">
+      <h2>هدف جشنواره</h2>
+      <p>جشنواره فرهنگی هنری "فردا" با هدف آشنایی نسل جوان با مشاهیر ایران و معرفی بزرگان فرهنگ و ادب ایران زمین برگزار می‌شود. این جشنواره تلاش دارد تا از طریق هنر و ادبیات، فرهنگ ایرانی را زنده نگه دارد و نسل‌های آینده را با افتخارات ملی آشنا کند.</p>
+    </section>
+
+    <section id="celebrity">
+      <h2>مشاهیر ایران</h2>
+      <div class="celebrities">
+        <div class="celebrity-card">
+          <img src="https://s6.uupload.ir/files/829x1159_j1hu.jpg" alt="عکس عمر خیام">
+          <h3>عمر خیام</h3>
+          <p>عمر خیام، شاعر، ریاضی‌دان و اخترشناس ایرانی قرن 11 میلادی بود. رباعیات خیام به موضوعاتی مانند زندگی، فلسفه، و گذر زمان می‌پردازد. خیام در علم نجوم و ریاضیات هم دستاوردهای مهمی داشته است.</p>
+        </div>
+        <div class="celebrity-card">
+          <img src="https://s6.uupload.ir/files/1710530_00pw.jpg" alt="عکس ابوعلی سینا">
+          <h3>ابوعلی سینا</h3>
+          <p>ابوعلی سینا، پزشک و فیلسوف ایرانی، کتاب "قانون در طب" را نوشت که قرن‌ها منبع اصلی پزشکی بود. او در فلسفه، منطق و ریاضیات نیز نقش مهمی داشت و از بزرگ‌ترین دانشمندان تاریخ محسوب می‌شود.</p>
+        </div>
+        <div class="celebrity-card">
+          <img src="https://s6.uupload.ir/files/نگاره_فردوسی_(cropped_and_edited)_5fu3.jpg" alt="عکس فردوسی">
+          <h3>فردوسی</h3>
+          <p>حکیم فردوسی، نویسنده شاهنامه، تاریخ ایران باستان را در قالب شعر بازگو کرده است. شاهنامه یکی از بزرگ‌ترین آثار حماسی جهان است که فرهنگ و هویت ایرانی را زنده نگه داشته است.</p>
+        </div>
+        <div class="celebrity-card">
+          <img src="https://s6.uupload.ir/files/عکس-نوشته-نیما-یوشیج-e1638703952593-1024x628_985t.jpg" alt="عکس نیما یوشیج">
+          <h3>نیما یوشیج</h3>
+          <p>نیما یوشیج، پدر شعر نو فارسی، سبک جدیدی در شعر ایجاد کرد که از قالب‌های سنتی فاصله داشت. او شعر را از قید و بند وزن و قافیه آزاد کرد و مسیر جدیدی در ادبیات فارسی گشود.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="designer">
+      <h2>درباره طراح</h2>
+      <p>این وب‌سایت توسط <strong>مهدیس جهانگیری</strong>، دانش‌آموز دبیرستان استعدادهای درخشان فرزانگان ۲ کرج طراحی شده است. هدف از این وب‌سایت، معرفی مشاهیر ایران و نمایش آثار فرهنگی و هنری آن‌هاست.</p>
+    </section>
+  </main>
+  <footer>
+    <p>طراحی شده توسط <strong>مهدیس جهانگیری - دبیرستان فرزانگان 2</strong></p>
+  </footer>
+</body>
+</html>
